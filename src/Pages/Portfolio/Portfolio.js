@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-
+import React, { useState } from 'react';
 import Project from '../Project/Project';
 
 const Portfolio = () => {
@@ -35,14 +33,12 @@ const Portfolio = () => {
         },
     ]
     const [data, setData] = useState(portfolioData)
-    // console.log(portfolioData)
 
     const filterResult = cardItem => {
         const result = portfolioData.filter(item => {
             return item.catagory === cardItem
         })
         setData(result)
-        // console.log('gf', result)
 
     }
 
@@ -66,8 +62,6 @@ const Portfolio = () => {
             </div>
             <div className='grid grid-cols-5 gap-10 mt-10 items-center'>
                 <div className='col-span-2 flex flex-col gap-7 justify-center items-center'>
-
-
 
                     <button onClick={() => setData(portfolioData)} className='text-lg '>All Projects</button>
                     <button onClick={() => filterResult('bussiness')} className='text-lg '>Portfolio</button>
