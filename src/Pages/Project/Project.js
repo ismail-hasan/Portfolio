@@ -2,6 +2,9 @@ import React from 'react';
 
 const Project = ({ projectData }) => {
     const { name, img, dec } = projectData
+    // console.log('data', projectData)
+
+   
     return (
 
         <div className='border border-3 bg-zinc-800 text-white border-zinc-400 rounded-md'>
