@@ -7,6 +7,7 @@ import Portfolio from '../Portfolio/Portfolio';
 const HomePage = () => {
     return (
         <div>
+            
             <Home></Home>
             <About></About>
             <Portfolio></Portfolio>

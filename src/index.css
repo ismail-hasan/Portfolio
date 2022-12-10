@@ -8,7 +8,6 @@
 }
 
 body {
-
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -17,7 +16,7 @@ body {
   background-color: #1f1f38;
   line-height: 1.7;
   color: #fff;
-  background-image: url('Assets/bg-texture.png');
+  /* background-image: url('Assets/bg-texture.png'); */
 }
 
 code {
