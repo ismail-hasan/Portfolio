@@ -4,7 +4,7 @@ import { AiOutlineFilePdf } from 'react-icons/ai';
 const Home = () => {
     const onButtonClick = () => {
         // using Java Script method to get PDF file
-        fetch('SamplePDF (2).pdf').then(response => {
+        fetch('Md Ismail Hossain MERN Stack Resume (3).pdf').then(response => {
             response.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);
                 let alink = document.createElement('a');

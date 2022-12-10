@@ -12,22 +12,22 @@ const Portfolio = () => {
         },
         {
             id: 2,
-            img: "https://www.dreamhost.com/academy/wp-content/uploads/2020/11/what-makes-a-good-website-750x498.jpg",
-            name: 'doctor portal',
+            img: "https://i.ibb.co/qdsRRwj/pexels-john-tekeridis-249541.jpg",
+            name: 'isk photography',
             catagory: "bussiness",
             dec: "this is a amazine website "
         },
         {
             id: 3,
-            img: "https://www.dreamhost.com/academy/wp-content/uploads/2020/11/what-makes-a-good-website-750x498.jpg",
-            name: 'doctor portal',
+            img: "https://wallpaperaccess.com/full/1657894.jpg",
+            name: 'dragon portal',
             catagory: "portfolio",
             dec: "this is a amazine website "
         },
         {
             id: 4,
-            img: "https://www.dreamhost.com/academy/wp-content/uploads/2020/11/what-makes-a-good-website-750x498.jpg",
-            name: 'doctor portal',
+            img: "https://i.ibb.co/fkpFMZQ/pexels-veeterzy-303383.jpg",
+            name: 're-commerce',
             catagory: "E-commerce",
             dec: "this is a amazine website "
         },
