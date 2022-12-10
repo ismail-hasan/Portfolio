@@ -12,8 +12,8 @@ const About = () => {
     return (
         <div className='h-screen'>
             <div className='text-center'>
-                <h1 className='text-[85px] uppercase font-bold opacity-[0.08] tracking-[7px]'>about ME</h1>
-                <h1 className='text-[40px] capitalize -mt-[90px]'>about me</h1>
+                <h1 className='text-[50px] lg:text-[85px] uppercase font-bold opacity-[0.08] tracking-[7px]'>about ME</h1>
+                <h1 className='text-[40px] capitalize -mt-[50px] lg:-mt-[90px]'>about me</h1>
             </div>
             <div className='flex justify-between items-center h-[70vh]'>
                 <div>
