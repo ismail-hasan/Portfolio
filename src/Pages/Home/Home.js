@@ -5,7 +5,6 @@ import { Link } from 'react-scroll';
 
 const Home = () => {
     const onButtonClick = () => {
-        // using Java Script method to get PDF file
         fetch('Md Ismail Hossain MERN Stack Resume (3).pdf').then(response => {
             response.blob().then(blob => {
                 const fileURL = window.URL.createObjectURL(blob);

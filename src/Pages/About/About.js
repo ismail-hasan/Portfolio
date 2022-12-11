@@ -3,6 +3,7 @@ import React from 'react';
 const About = () => {
     const aboutData = [
         {
+            id: 1,
             name: "ismail hasan",
             title: "MERN Stack Developer",
             dec: "hello my name is ismail hasan. I am web developer. I am Quick learner. My Expericence is Html "
@@ -25,9 +26,10 @@ const About = () => {
                 <div>
                     {
                         aboutData.map((data) => {
+
                             const { name, dec, title } = data;
                             return (
-                                <div className='mt-16 md:mt-0'>
+                                <div key={data.id} className='mt-16 md:mt-0'>
                                     <h1 className='capitalize text-2xl font-semibold'>{name}</h1>
                                     <h1>{title}</h1>
                                     <h1>{dec}</h1>
