@@ -1,30 +1,48 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { useEffect, useState } from 'react';
 import './App.css';
 import About from './Pages/About/About';
 import Contact from './Pages/Contact/Contact';
 import Home from './Pages/Home/Home';
-import HomePage from './Pages/HomePage/HomePage';
 import Navbar from './Pages/Navbar/Navbar';
 import Portfolio from './Pages/Portfolio/Portfolio';
+import ScaleLoader from "react-spinners/ScaleLoader";
 
 function App() {
-  // const router = createBrowserRouter([
-  //   {
-  //     path: '/',
-  //     element: <HomePage></HomePage>
-  //   }
-  // ])
+  const [loading, setLoading] = useState(false)
+  let [color, setColor] = useState("#ffffff");
+
+  useEffect(() => {
+    setLoading(true)
+    setTimeout(() => {
+      setLoading(false)
+    }, 1000);
+  }, [])
   return (
     <div className='px-[70px]'>
 
-      {/* <RouterProvider router={router}></RouterProvider> */}
+      {
+        loading ?
+          <div className='App'>
+            <ScaleLoader
+              color={color}
+              loading={loading}
+              size={150}
+              aria-label="Loading Spinner"
+              data-testid="loader"
+            />
 
-      <Navbar></Navbar>
-      <Home></Home>
-      <About></About>
-      <Portfolio></Portfolio>
-      <Contact></Contact>
-    </div>
+          </div>
+          :
+          <>
+            <Navbar></Navbar>
+            <Home></Home>
+            <About></About>
+            <Portfolio></Portfolio>
+            <Contact></Contact>
+          </>
+      }
+
+    </div >
   );
 }
 

@@ -18,7 +18,7 @@ const Home = () => {
     }
     return (
 
-        <section id='home' className='lg:flex h-screen items-center gap-14 '>
+        <section id='home' className='lg:flex h-screen items-center gap-14'>
             <div className='w-full lg:w-[60%]'>
                 <p className='text-[20px]'>Hi, my name is</p>
                 <h1 className='text-3xl lg:text-6xl font-bold py-3 '>Md Ismail Hossain</h1>
