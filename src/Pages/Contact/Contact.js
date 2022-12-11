@@ -20,7 +20,7 @@ const Contact = () => {
 
 
     return (
-        <div className=' mb-20'>
+        <section id='contact' className=' mb-20'>
             <div className='text-center mb-20'>
                 <h1 className='text-[52px] lg:text-[85px] uppercase font-bold opacity-[0.08] tracking-[7px]'>contact</h1>
                 <h1 className='text-[40px] capitalize  -mt-[50px] lg:-mt-[90px]'>Contact</h1>
@@ -44,7 +44,7 @@ const Contact = () => {
                     </form>
                 </div>
             </div>
-        </div>
+        </section>
     );
 };
 
