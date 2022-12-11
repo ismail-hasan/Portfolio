@@ -33,13 +33,13 @@ const Home = () => {
             <div className='mt-10 md:mt-0'>
                 <img className='rounded-full w-64 h-64' src='https://media.istockphoto.com/id/1204374053/photo/profile-side-view-portrait-of-his-he-nice-attractive-skilled-focused-serious-guy-writing.jpg?s=612x612&w=0&k=20&c=ohF7qYstx9E6eJXpcQUtxFJCx9jjRBHilXcFehoOGyU=' alt="Md Ismail Hossain" />
             </div>
-            <div className='fixed flex flex-col right-7 gap-3 bg-[rgba(0,0,0,.3)] px-2 py-5 rounded-3xl'>
-                <a href="#home">  <FaHome className='text-2xl text-white'></FaHome></a>
-                <a href="#about">  <FaHome className='text-2xl text-white'></FaHome></a>
-                <a href="#project">  <FaHome className='text-2xl text-white'></FaHome></a>
-                <a href="#testimonial">  <FaHome className='text-2xl text-white'></FaHome></a>
-                <a href="#blog">  <FaHome className='text-2xl text-white'></FaHome></a>
-                <a href="#contact">  <FaHome className='text-2xl text-white'></FaHome></a>
+            <div className='fixed flex flex-col right-3 gap-3 bg-[rgba(0,0,0,.3)] px-2 py-5 rounded-3xl'>
+                <a href="#home">  <FaHome className='text-[16px] text-white'></FaHome></a>
+                <a href="#about">  <FaHome className='text-[16px] text-white'></FaHome></a>
+                <a href="#project">  <FaHome className='text-[16px] text-white'></FaHome></a>
+                <a href="#testimonial">  <FaHome className='text-[16px] text-white'></FaHome></a>
+                <a href="#blog">  <FaHome className='text-[16px] text-white'></FaHome></a>
+                <a href="#contact">  <FaHome className='text-[16px] text-white'></FaHome></a>
 
             </div>
         </section>

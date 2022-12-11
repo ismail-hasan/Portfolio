@@ -16,11 +16,20 @@ body {
   background-color: #1f1f38;
   line-height: 1.7;
   color: #fff;
-  
 }
 
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-} */
+::-webkit-scrollbar {
+  width: 3px;
+}
 
+::-webkit-scrollbar-thumb {
+  border: 7px solid;
+  border-image: linear-gradient(180deg, tomato, rgb(179, 6, 242));
+  border-image-slice: 1;
+  transition: all .5s ease-in-out
+}
+
+::-webkit-scrollbar-thumb:hover {
+  border-image: linear-gradient(180deg, rgb(58, 234, 4), rgb(234, 115, 10));
+  border-image-slice: 1;
+}
