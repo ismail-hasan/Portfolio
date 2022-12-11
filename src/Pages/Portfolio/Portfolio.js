@@ -60,7 +60,7 @@ const Portfolio = () => {
                     <button onClick={() => filterResult('E-commerce')} className='text-lg '>E-Commerce</button>
 
                 </div>
-                <div className='grid grid-cols-1 col-span-5 lg:col-span-4 lg:grid-cols-3 gap-10'>
+                <div className='grid grid-cols-1 col-span-5 lg:col-span-4 lg:grid-cols-3 gap-7'>
                     {
                         data.map(projectData => <Project
                             key={projectData.id}

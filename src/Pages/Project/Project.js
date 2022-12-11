@@ -11,12 +11,19 @@ const Project = ({ projectData }) => {
 
         <div className='border border-3 bg-zinc-800 text-white border-zinc-400 rounded-md'>
             <div className='text-img'>
-                <img className='' src={img} alt="" />
+                <img className='h-[210px] w-full' src={img} alt="" />
                 <div className='text-overly'>
                     <div className='text-details'>
-                        <BsGithub></BsGithub>
-                        <AiFillEye></AiFillEye>
-                        <AiFillEye></AiFillEye>
+                        <a href="">
+                            <BsGithub></BsGithub>
+                        </a>
+                        <a href="">
+                            <AiFillEye></AiFillEye>
+                        </a>
+                        <a href="">
+                            <AiFillEye></AiFillEye>
+
+                        </a>
                     </div>
                 </div>
             </div>
