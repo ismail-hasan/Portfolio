@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineFilePdf } from 'react-icons/ai';
 import { FaHome } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
 const Home = () => {
     const onButtonClick = () => {
@@ -34,12 +35,25 @@ const Home = () => {
                 <img className='rounded-full w-64 h-64' src='https://media.istockphoto.com/id/1204374053/photo/profile-side-view-portrait-of-his-he-nice-attractive-skilled-focused-serious-guy-writing.jpg?s=612x612&w=0&k=20&c=ohF7qYstx9E6eJXpcQUtxFJCx9jjRBHilXcFehoOGyU=' alt="Md Ismail Hossain" />
             </div>
             <div className='fixed flex flex-col right-3 gap-3 bg-[rgba(0,0,0,.3)] px-2 py-5 rounded-3xl'>
-                <a href="#home">  <FaHome className='text-[16px] text-white'></FaHome></a>
-                <a href="#about">  <FaHome className='text-[16px] text-white'></FaHome></a>
-                <a href="#project">  <FaHome className='text-[16px] text-white'></FaHome></a>
-                <a href="#testimonial">  <FaHome className='text-[16px] text-white'></FaHome></a>
-                <a href="#blog">  <FaHome className='text-[16px] text-white'></FaHome></a>
-                <a href="#contact">  <FaHome className='text-[16px] text-white'></FaHome></a>
+
+                <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
+                    <FaHome className='text-[16px] text-white'></FaHome>
+                </Link>
+                <Link to="about" spy={true} smooth={true} offset={-10} duration={500}>
+                    <FaHome className='text-[16px] text-white'></FaHome>
+                </Link>
+                <Link to="project" spy={true} smooth={true} offset={-10} duration={500}>
+                    <FaHome className='text-[16px] text-white'></FaHome>
+                </Link>
+                <Link to="testimonial" spy={true} smooth={true} offset={50} duration={500}>
+                    <FaHome className='text-[16px] text-white'></FaHome>
+                </Link>
+                <Link to="blog" spy={true} smooth={true} offset={50} duration={500}>
+                    <FaHome className='text-[16px] text-white'></FaHome>
+                </Link>
+                <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
+                    <FaHome className='text-[16px] text-white'></FaHome>
+                </Link>
 
             </div>
         </section>
