@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiOutlineFilePdf } from 'react-icons/ai';
-import { FaHome } from 'react-icons/fa';
+import { FaHome, FaUserGraduate, FaFirefoxBrowser, FaLink } from 'react-icons/fa';
+import { MdMarkEmailUnread } from 'react-icons/md';
 import { Link } from 'react-scroll';
 
 const Home = () => {
@@ -33,25 +34,25 @@ const Home = () => {
             <div className='mt-10 md:mt-0'>
                 <img className='rounded-full w-64 h-64' src='https://media.istockphoto.com/id/1204374053/photo/profile-side-view-portrait-of-his-he-nice-attractive-skilled-focused-serious-guy-writing.jpg?s=612x612&w=0&k=20&c=ohF7qYstx9E6eJXpcQUtxFJCx9jjRBHilXcFehoOGyU=' alt="Md Ismail Hossain" />
             </div>
-            <div className='fixed flex flex-col right-3 gap-3 bg-[rgba(0,0,0,.3)] px-2 py-5 rounded-3xl'>
+            <div className='fixed flex flex-col right-3 gap-4 bg-[rgba(0,0,0,.3)] px-3 py-7 rounded-3xl'>
 
                 <Link activeClass="active" to="home" spy={true} smooth={true} offset={50} duration={500}>
-                    <FaHome className='text-[16px] text-white'></FaHome>
+                    <FaHome className='text-[17px] cursor-pointer text-white'></FaHome>
                 </Link>
                 <Link to="about" spy={true} smooth={true} offset={-10} duration={500}>
-                    <FaHome className='text-[16px] text-white'></FaHome>
+                    <FaUserGraduate className='text-[17px] cursor-pointer text-white'></FaUserGraduate>
                 </Link>
                 <Link to="project" spy={true} smooth={true} offset={-10} duration={500}>
-                    <FaHome className='text-[16px] text-white'></FaHome>
+                    <FaFirefoxBrowser className='text-[17px] cursor-pointer text-white'></FaFirefoxBrowser>
                 </Link>
-                <Link to="testimonial" spy={true} smooth={true} offset={50} duration={500}>
-                    <FaHome className='text-[16px] text-white'></FaHome>
-                </Link>
-                <Link to="blog" spy={true} smooth={true} offset={50} duration={500}>
-                    <FaHome className='text-[16px] text-white'></FaHome>
+                {/* <Link to="testimonial" spy={true} smooth={true} offset={-10} duration={500}>
+                    <FaHome className='text-[17px] cursor-pointer text-white'></FaHome>
+                </Link> */}
+                <Link to="blog" spy={true} smooth={true} offset={-10} duration={500}>
+                    <FaLink className='text-[17px] cursor-pointer text-white'></FaLink>
                 </Link>
                 <Link to="contact" spy={true} smooth={true} offset={50} duration={500}>
-                    <FaHome className='text-[16px] text-white'></FaHome>
+                    <MdMarkEmailUnread className='text-[17px] cursor-pointer text-white'></MdMarkEmailUnread>
                 </Link>
 
             </div>

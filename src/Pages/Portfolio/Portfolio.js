@@ -57,15 +57,16 @@ const Portfolio = () => {
         fetch('http://localhost:5000/allproject')
             .then(res => res.json())
             .then(data => setPortfolioData(data))
-    }, [])
+    }, [portfolioData])
 
-    const [datas, setDatas] = useState(portfolioData)
+    // const [datas, setDatas] = useState()
+    // console.log('curren data', datas)
 
     const filterResult = cardItem => {
         const result = portfolioData.filter(item => {
             return item.catagory === cardItem
         })
-        setDatas(result)
+        // portfolioData(result)
     }
 
     return (
@@ -78,18 +79,17 @@ const Portfolio = () => {
             <div className='grid grid-cols-5 gap-10 mt-16 mb-24'>
 
                 <div className='w-full col-span-5 lg:col-span-1 flex flex-col gap-7'>
-                    <button onClick={() => setDatas(portfolioData)} className='text-lg '>All Projects</button>
+                    {/* <button onClick={() => setPortfolioData(portfolioData)} className='text-lg '>All Projects</button> */}
                     <button onClick={() => filterResult('portfolio')} className='text-lg '>Portfolio</button>
                     <button onClick={() => filterResult('bussiness')} className='text-lg '>bussiness</button>
                     <button onClick={() => filterResult('E-commerce')} className='text-lg '>E-Commerce</button>
-
                 </div>
                 <motion.div
                     layout
                     className='grid grid-cols-1 col-span-5 lg:col-span-4 lg:grid-cols-3 gap-7'>
                     <AnimatePresence>
                         {
-                            datas.map(projectData => <Project
+                            portfolioData.map(projectData => <Project
                                 key={projectData._id}
                                 projectData={projectData}
                             ></Project>)

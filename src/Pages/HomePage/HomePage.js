@@ -5,6 +5,7 @@ import Home from '../Home/Home';
 import Navbar from '../Navbar/Navbar';
 import Portfolio from '../Portfolio/Portfolio';
 import ScaleLoader from "react-spinners/ScaleLoader";
+import Blog from '../Blog/Blog';
 
 
 const HomePage = () => {
@@ -36,6 +37,7 @@ const HomePage = () => {
                         <Home></Home>
                         <About></About>
                         <Portfolio></Portfolio>
+                        <Blog></Blog>
                         <Contact></Contact>
                     </>
             }

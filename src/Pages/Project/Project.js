@@ -1,6 +1,7 @@
 import React from 'react';
 import { AiFillEye } from 'react-icons/ai';
 import { BsGithub } from 'react-icons/bs';
+import { FaRegEdit } from 'react-icons/fa';
 import { motion } from "framer-motion"
 
 import './Project.css'
@@ -8,8 +9,7 @@ import { Link } from 'react-router-dom';
 
 
 const Project = ({ projectData }) => {
-    const { name, img, dec, _id } = projectData
-
+    const { name, img, dec, _id, liveLink, github } = projectData
 
     return (
 
@@ -24,14 +24,14 @@ const Project = ({ projectData }) => {
                 <img className='h-[210px] w-full' src={img} alt="" />
                 <div className='text-overly'>
                     <div className='text-details'>
-                        <a href="#">
+                        <a _blank href={github}>
                             <BsGithub></BsGithub>
                         </a>
-                        <Link>
+                        <a href={liveLink}>
                             <AiFillEye></AiFillEye>
-                        </Link>
+                        </a>
                         <Link to={`/project/${_id}`}>
-                            <AiFillEye></AiFillEye>
+                            <FaRegEdit></FaRegEdit>
                         </Link>
                     </div>
                 </div>
